@@ -34,7 +34,7 @@ body {
 
 section {
     padding: 460px;
-    margin-top: 0px;
+    margin: 0px;
 }
 
 #home { 
@@ -44,13 +44,19 @@ section {
 
 #about { 
     background-color: #243642;
-    text-align: center;
+    align-items: center;
     
 }
 
 #about h2 {
     color: white;
     font-weight: normal;
+    margin-top: 0;
+}
+
+.about-content {
+    transform: translateY(-40px);
+    text-align: center;
 }
 
 #certificates { 
@@ -176,7 +182,7 @@ button {
     border-color: transparent #243642 transparent transparent; 
   }
 
-  .footer {
+.footer {
     background-color: #000000;
     color: white;
     padding: 20px 0;
@@ -184,14 +190,32 @@ button {
     position: relative;
     bottom: 0;
     width: 100%;
-  }
+}
   
-  .footer-content {
+.footer-content {
     max-width: 1200px;
     margin: 0 auto;
-  }
+}
   
-  .footer p {
+.footer p {
     margin: 0;
     font-size: 14px;
-  }
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #629584;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #467566;
+}
