@@ -175,3 +175,23 @@ button {
     border-style: solid;
     border-color: transparent #243642 transparent transparent; 
   }
+
+  .footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
