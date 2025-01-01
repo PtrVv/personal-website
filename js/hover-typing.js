@@ -1,5 +1,5 @@
 const bubbleBox = document.getElementById("bubble-box");
-const text = "Hello! My name is Petar Vasilev and I am a Software Engineer specializing in Python development.";
+const text = "Hello! My name is Petar Vasilev and I am a Software Developer specializing in Python.";
 let index = 0;
 
 function typeText() {
