@@ -1,0 +1,41 @@
+#certificates { 
+    background-color: #387478;
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+ }
+ 
+ .certificates-container {
+    display: flex;
+    overflow: hidden; 
+    transition: transform 0.5s ease-in-out;
+  }
+
+.certificates-container img {
+    flex: 0 0 auto;
+    height: 810px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 0 10px;
+    -webkit-user-drag: none;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

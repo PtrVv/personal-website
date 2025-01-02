@@ -1,0 +1,113 @@
+#home { 
+    background-color: #E2F1E7;
+    text-align: center; 
+    position: relative;
+}
+
+.home-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.home-image .man-programming {
+    border-radius: 50%;
+    width: 500px;
+    margin-bottom: 0px;
+    position: relative;
+    left: -70%;
+    -webkit-user-drag: none;
+}
+
+.home-image .man-programming:hover {
+    box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.6);
+}
+
+.bubble-box {
+    position: absolute;
+    left: 40%; 
+    padding: 10px 20px;
+    background-color: #243642;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    pointer-events: none;
+    white-space: normal; 
+    transition: opacity 0.3s ease; 
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 340px;
+    overflow-wrap: break-word;
+    text-align: center;
+
+}
+
+.home-image:hover .bubble-box {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.bubble-box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #243642 transparent transparent; 
+}
+
+.glow {
+    box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.6);
+    animation: glow-animation 2s infinite;
+}
+
+@keyframes glow-animation {
+    0%, 100% {
+        box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 30px 15px rgba(0, 123, 255, 0.8);
+    }
+}
+
+
+#mobileNav {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    nav span {display: inline-block;}
+    #desktopNav { display: none; }
+    #mobileNav { display: inline-block; }
+    
+    .dropdown { display: inline-block; }
+    nav a:hover { color: none; }
+
+    h1 {
+        top: 40vh;
+        left: 38vw;
+    }
+
+    h2 {
+        top: 50vh;
+        left: 25vw;
+        width: 200px;
+    }
+
+    .home-image .man-programming {
+        position: absolute;
+        width: 180px;
+        left: -100%;
+        bottom: 15vw;
+    }
+
+    #home {
+        display: block;
+    }
+}

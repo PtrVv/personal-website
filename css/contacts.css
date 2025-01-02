@@ -1,0 +1,23 @@
+#contacts { 
+    background-color: #629584; 
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.contact-icons a {
+    display: block;
+}
+  
+.contact-icons img {
+    width: 100px;  
+    height: 100px;
+    transition: transform 0.3s ease; 
+}
+  
+.contact-icons img:hover {
+    transform: scale(1.1); 
+}
