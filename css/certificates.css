@@ -9,6 +9,7 @@
     display: flex;
     overflow: hidden; 
     transition: transform 0.5s ease-in-out;
+    overflow-x: auto;
   }
 
 .certificates-container img {
@@ -38,4 +39,19 @@ button {
 
 .next {
     right: 10px;
+}
+
+@media (max-width: 450px) {
+    button {
+        display: none;
+    }
+
+    .certificates-container {
+        padding: 10px 0;
+        margin-left: 0;
+    }
+
+    .certificates-container img {
+        height: 600px;
+    }
 }

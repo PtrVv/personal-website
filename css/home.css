@@ -89,25 +89,31 @@
     .dropdown { display: inline-block; }
     nav a:hover { color: none; }
 
-    h1 {
-        top: 40vh;
-        left: 38vw;
+    #home {
+        display: block;
+        padding: 10px;
     }
 
-    h2 {
-        top: 50vh;
-        left: 25vw;
-        width: 200px;
+    .home-image {
+        justify-content: center;
     }
 
     .home-image .man-programming {
-        position: absolute;
-        width: 180px;
-        left: -100%;
-        bottom: 15vw;
+        max-width: 80%;
+        position: relative;
+        left: -5%;
     }
 
-    #home {
-        display: block;
+    .bubble-box {
+        font-size: 14px;
+        margin-top: 55vh;
+        left: 1%;
+    }
+
+    .bubble-box::before {
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-color: transparent transparent #243642 transparent;
     }
 }

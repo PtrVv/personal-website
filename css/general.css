@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     font-family: 'Parkinsans';
+    padding: 0;
 }
 
 .navbar {
@@ -67,6 +68,12 @@ section {
 
 @media (max-width: 480px) {
     section {
-      width: 90%; /* Reduce width for phones */
+      padding: 10px;
+      height: 100vh;
+    }
+
+    .footer {
+        padding: 15px 0;
+        font-size: 12px;
     }
 }
