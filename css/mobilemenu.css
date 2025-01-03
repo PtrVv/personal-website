@@ -85,7 +85,6 @@ body {
     color: #33d2ff;
   }
 
-  /* Responsive Adjustments */
   @media screen and (max-width: 768px) {
     .menu-list li a {
       font-size: 1.2rem;
