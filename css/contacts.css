@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
   
 .contact-icons a {
@@ -38,7 +39,7 @@
 }
 
 #copiedMessage.fade-out {
-    opacity: 0; /* Set opacity to 0 for fade-out */
+    opacity: 0; 
 }
 
 #copiedMessage.show {
@@ -47,4 +48,20 @@
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 600px) {
+    .contact-icons {
+        justify-content: space-between; 
+        gap: 10px; 
+    }
+
+    .contact-icons a {
+        width: 45%; 
+    }
+
+    .contact-icons img {
+        width: 100%; 
+        height: auto; 
+    }
 }
